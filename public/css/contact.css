@@ -1,0 +1,149 @@
+.contact {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--waiting_color);
+}
+
+.contact .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	height: 4rem;
+	background-color: var(--black_2);
+}
+
+.contact .title *[class*="icon-"] {
+	color: white;
+	font-size: 3rem;
+	animation: hands_animation 0.6s linear infinite;
+}
+
+@keyframes hands_animation {
+	0%{
+		color: #ff00ff;
+	}
+	25% {
+		color: #ffff00;
+	}
+	50% {
+		margin: 0 2rem;
+		color: #00ffff;
+	}
+	75% {
+		color: #ff0000;
+	}
+	100% {
+		color: #00ff00
+	}
+}
+
+.contact .title h3 {
+	color: white;
+	font-size: 2.4rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.contact .ctn_parts {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: calc(100% - 4rem);
+	background-image: url('./../image/contact.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@media (max-width: 720px) {
+	.contact .ctn_parts {
+		flex-direction: column;
+	}
+} 
+
+.contact .ctn_parts::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--wanda_gradient_color_2);
+}
+
+.contact .ctn_parts *[class*="part_"] {
+	z-index: +1;
+}
+
+.contact .ctn_parts .part_isotype,
+.contact .ctn_parts .part_partner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.contact .ctn_parts .part_isotype .icon-isotype {
+	color: white;
+	font-size: 16rem;
+}
+
+.contact .ctn_parts .part_isotype p {
+	color: white;
+	font-size: 3.2rem;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.contact .ctn_parts .part_partner {
+	padding: 2rem 0 3rem 4rem;
+	background-color: white;
+	clip-path: polygon(20% 12%, 100% 0, 100% 100%, 0 90%);
+}
+
+.contact .ctn_parts .part_partner img {
+	width: 18rem;
+	height: 18rem;
+}
+
+.contact .ctn_parts .part_partner h4 {
+	color: var(--fg_color);
+	font-size: 2.6rem;
+	font-family: 'arima', serif;
+	font-weight: 700;
+	text-align: center;
+	transform: translateY(-1rem);
+}
+
+.contact .ctn_parts .part_partner .phone_number {
+	padding: 0.5rem 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	background: var(--wanda_gradient_color);
+	border-radius: 8px;
+}
+
+.contact .ctn_parts .part_partner .phone_number *[class*="icon-"] {
+	color: white;
+	font-size: 3.6rem;
+}
+
+.contact .ctn_parts .part_partner .phone_number b {
+	color: white;
+	font-size: 2.4rem;
+	font-family: 'Baloo 2', sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+}

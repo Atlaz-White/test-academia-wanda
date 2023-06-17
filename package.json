@@ -1,0 +1,19 @@
+{
+  "name": "wanda-academy",
+  "version": "1.0.0",
+  "description": "Academia Wanda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wanda",
+    "academy",
+    "landing-page"
+  ],
+  "author": "Atlaz-White",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
