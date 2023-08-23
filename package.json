@@ -4,16 +4,17 @@
   "description": "Academia Wanda",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js"
   },
   "keywords": [
     "wanda",
     "academy",
     "landing-page"
   ],
-  "author": "Atlaz-White",
+  "author": "Alex-Rios",
   "license": "ISC",
-  "dependencies": {
-    "express": "4.18.2"
+  "devDependencies": {
+    "express": "4.18.2",
+    "nodemon": "3.0.1"
   }
 }

@@ -18,7 +18,7 @@
 }
 
 @keyframes notice_animation {
-	from {
+	to {
 		transform: translateY(-100%);
 	}
 }
@@ -37,6 +37,14 @@
 
 .notice .part .icon-fire {
 	color: orange;
+	animation: fire_animation 1s ease infinite;
+}
+
+@keyframes fire_animation {
+	to {
+		color: #f02f00;
+		scale: 1.14;
+	}
 }
 
 .notice .part p {

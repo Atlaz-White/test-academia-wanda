@@ -1,1 +1,6 @@
-./image/*
+dev_notes/
+index.js
+node_modules/
+public
+server/
+src/

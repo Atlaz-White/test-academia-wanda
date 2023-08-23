@@ -1,12 +1,24 @@
-footer {
-	padding: 1rem;
+.footer {
+	padding: 1.4rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	line-height: 2;
+	background-color: var(--black_2);
+}
+
+.footer .eslogan {
+	color: var(--bg_color);
+	font-size: 1.2rem;
+}
+
+.footer .rights {
 	color: var(--footer-gray);
 	font-size: 0.9rem;
+}
+
+.footer .eslogan,
+.footer .rights {
 	font-family: 'Poppins', sans-serif;
-	line-height: 1.6;
-	background-color: var(--black_2);
 }

@@ -1,20 +1,20 @@
 const express = require('express');
 const app = express();
-const server = require('http').Server(app);
-const path = require('path');
 
-const toolS = require('./server/module/tools-server.js');
+const {
+	getHostname,
+	getPort
+} = require('./server/tools.js');
 
-const ipaddress = toolS.getIPv4[1];
-const port = 2023;
-const url_d = `http://${ipaddress}:${port}`;
+const _HOSTNAME = getHostname();
+const _PORT = getPort();
 
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static("./public"));
 
 app.get('/', (req, res) => {
 	res.sendFile('index.html');
 });
 
-server.listen(port, ipaddress, () => {
-	console.log(url_d);
+app.listen(_PORT, _HOSTNAME, () => {
+	console.log(`App deploy on -> http://${_HOSTNAME}:${_PORT}`);
 });

@@ -29,11 +29,10 @@
 	--black_2: #080808;
 	--footer-gray: #999999;
 	--waiting_color: darkgray;
-	--bg_color: #fafafa;
+	--bg_color: #f8f8f8;
 	--wanda_color: #ff1aac;
 	--opening-gradient: linear-gradient(0deg, #ff1aac66, #ff1aac99);
 	--wanda_gradient_color: linear-gradient(135deg, #ff42af, #ff1a87);
-	--wanda_gradient_color_2: linear-gradient(90deg, #ff1aacdd, #ff1aac14);
 }
 
 html {
